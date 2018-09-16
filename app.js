@@ -20,8 +20,11 @@ const aboutProps = {
 };
 
 //register reusable templates
-hbs.registerPartials(__dirname + './views/partials');
+hbs.registerPartials(__dirname + '/views/partials');
 app.set('views engine', 'hbs');
+
+
+
 
 //keep all loggers and blocker ABOVE this line
 app.use(express.static(__dirname + './public'));
@@ -40,4 +43,5 @@ app.get('/about', (request, response)=>{
 
 app.listen(port, ()=>{
   console.log(`listening on port ${port}`);
-})
+});
+
