@@ -30,6 +30,7 @@ app.set('views engine', 'hbs');
 app.use(express.static(__dirname + './public'));
 
 
+
 //register routes
 app.get('/', (request, response) => {
   response.render('home.hbs', homeProps)
